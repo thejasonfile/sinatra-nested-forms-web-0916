@@ -1,7 +1,19 @@
 <h1>Display your Pirate here</h1>
 
+<p>Name: <%= @pirate["name"] %></p>
+<p>Weight: <%= @pirate["weight"] %></p>
+<p>Height: <%= @pirate["height"] %></p>
 
 <h2>Display your first ship here</h2>
 
+<p>Name: <%= @ships.first["name"] %> </p>
+<p>Type: <%= @ships.first["type"] %> </p>
+<p>Booty: <%= @ships.first["booty"] %> </p>
 
 <h2>Display your second ship here</h2>
+
+<p>Name: <%= @ships.last["name"] %> </p>
+<p>Type: <%= @ships.last["type"] %> </p>
+<p>Booty: <%= @ships.last["booty"] %> </p>
+
+<a href="/new">Back to the form</a>
